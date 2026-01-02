@@ -1,0 +1,12 @@
+[project]
+name = "mojo-testing"
+version = "0.1.0"
+description = "Testing utilities, assertions, and mocking for Mojo applications"
+channels = ["conda-forge", "modular"]
+platforms = ["osx-arm64", "linux-64"]
+
+[tasks]
+test = "mojo run tests/test_testing.mojo"
+
+[dependencies]
+max = ">=24.6,<25"
